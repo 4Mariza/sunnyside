@@ -230,6 +230,7 @@ footer{
 }
 
 .more{
+    padding:0px 64px;
     display: flex;
     gap: 48px;
     font-size: 1.5rem;
