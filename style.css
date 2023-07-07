@@ -246,3 +246,56 @@ footer{
     width: 28px;
     padding-top: 56px;
 }
+
+/*DESKTOP */
+
+@media (min-width: 1080px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    
+    header{
+        height: 100vh;
+        background-image: url(./images/desktop/image-header.jpg);
+        background-position: bottom;
+        background-size: cover;
+        color: var(--white);
+        padding: 32px 16px;
+        display: grid;
+    }
+
+    .hamburguer{
+        display: none;
+    }
+
+    .normal_menu{
+        width: 40vw;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        font-size: medium;
+        font-family: var(--title-font);
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    a {
+        width: 18%;
+        text-decoration: none;
+        color: black;
+        font-family: var(--title-font);
+        font-weight: 600;
+        border-bottom: var(--white), solid;
+        background-color: var(--white);
+        border-radius: 10px;
+    }
+
+    
+}
