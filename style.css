@@ -249,7 +249,7 @@ footer{
 
 /*DESKTOP */
 
-@media (min-width: 1080px){
+@media (min-width: 465px){
     *{
         margin: 0;
         padding: 0;
@@ -262,40 +262,135 @@ footer{
     }
     
     header{
-        height: 100vh;
+        height: 95vh;
         background-image: url(./images/desktop/image-header.jpg);
-        background-position: bottom;
-        background-size: cover;
-        color: var(--white);
+        background-size: 85vw;
+        background-color: #3EBFFF;;
+        background-repeat: no-repeat;
         padding: 32px 16px;
         display: grid;
+        grid-template-rows: 15vh 20vh 1fr;
     }
 
+    header nav{
+        height: 2vh;
+        align-items: center;
+    }
+    
     .hamburguer{
         display: none;
     }
 
-    .normal_menu{
-        width: 40vw;
+     header .menu{
         display:flex;
-        flex-direction:row;
         justify-content: space-evenly;
-        font-size: medium;
-        font-family: var(--title-font);
-        font-weight: 600;
-        font-size: 1.2rem;
+        align-items: center;
+        width: 40vw;
     }
 
-    a {
-        width: 18%;
+    header .menu a{
+        color: var(--white);
         text-decoration: none;
-        color: black;
-        font-family: var(--title-font);
-        font-weight: 600;
-        border-bottom: var(--white), solid;
-        background-color: var(--white);
-        border-radius: 10px;
+        display: flex;
+        place-content: center;
     }
 
+    header .menu .contacts{
+        background-color: var(--white);
+        color: black;
+        border-radius: 150px;
+        font-family: var(--title-font);
+        width: 100px;
+        height: 40px;
+        font-size: small;
+        font-weight: 700;
+    }
+
+    header .logo{
+        font-size: 2rem;
+        font-weight: 800;
+        padding-left: 3vw;
+    }
+
+    header h1{
+        font-size: 3rem;
+        letter-spacing: 0.6rem;
+    }
+
+    header .arrow-down{
+        width: 2.5vw;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info img{
+        width: 50vw;
+    }
+
+    .description{
+        place-items: center start;
+        padding-left: 10vw;
+        padding-right: 3vw;
+    }
+
+    .description__title{
+        text-align: left;
+        width: 100%;
+    }
     
+    .description__text{
+        text-align: left;
+        padding: 0px;
+    }
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container.graphic{
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+        background-position: center;
+    }
+
+    .container.photography{
+        background-image: url(./images/desktop/image-photography.jpg);
+        background-position: center;
+    }
+    
+    .container .description__text{
+        padding: 0px 3.5rem;
+        text-align: center;
+    }
+
+    .container .description__title{
+        text-align: center;
+    }
+
+    .testimonials{
+        height: 100vh;
+        padding: 5vw;
+    }
+
+    .testimonials-title{
+        font-size: 1.5rem;
+        letter-spacing: .5rem;
+    }
+
+    .clients{
+        display: flex;
+    }
+
+    .grade{
+        display: flex;
+        width: 100%;
+    }
+    .grade img{
+        width: 25%;
+    }
 }
