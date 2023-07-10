@@ -36,6 +36,10 @@ header nav{
     justify-content: space-between;
 }
 
+.menu{
+    display: none;
+}
+
 header .logo{
     font-size: 1.5rem;
     font-weight: 700;
