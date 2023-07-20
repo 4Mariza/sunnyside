@@ -94,6 +94,11 @@ header .arrow-down{
     text-transform: uppercase;
 }
 
+.description__learn-more a{
+    text-decoration: none;
+    color: black;
+}
+
 .line{
     position: absolute;
     left: -5%;
@@ -261,8 +266,8 @@ footer{
     }
 
     body{
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
     }
     
     header{
@@ -326,8 +331,21 @@ footer{
     }
 
     .info{
+        width: 100vw;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 0px;
+    }
+
+    .egg__info{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 90%;
+    }
+
+    .cup__info{
+        display: flex;
+        height: 90%;
     }
 
     .info img{
@@ -348,6 +366,17 @@ footer{
     .description__text{
         text-align: left;
         padding: 0px;
+    }
+
+    .description__learn-more a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .containers__info{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .container{
